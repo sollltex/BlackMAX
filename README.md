@@ -14,7 +14,7 @@
 
 ## Содержание
 
-1. [Общая информация о приложении](https://github.com/KSNredawew/MAX--/new/main?filename=README.md#общая-информация)
+1. [Общая информация о приложении](https://github.com/KSNredawew/MAX--/tree/main?tab=readme-ov-file#общая-информация)
 2. [Обфускация кода](https://github.com/KSNredawew/MAX--/new/main?filename=README.md#обфускация-кода)
 3. [Сбор данных (модуль MyTracker)](https://github.com/KSNredawew/MAX--/new/main?filename=README.md#сбор-данных)
 4. [Системные взаимодействия (`AndroidManifest.xml`)](https://github.com/KSNredawew/MAX--/new/main?filename=README.md#системные-взаимодействия-androidmanifestxml)
