@@ -15,13 +15,13 @@
 ## Содержание
 
 1. [Общая информация о приложении](https://github.com/KSNredawew/MAX--/tree/main?tab=readme-ov-file#общая-информация)
-2. [Обфускация кода](https://github.com/KSNredawew/MAX--/new/main?filename=README.md#обфускация-кода)
-3. [Сбор данных (модуль MyTracker)](https://github.com/KSNredawew/MAX--/new/main?filename=README.md#сбор-данных)
-4. [Системные взаимодействия (`AndroidManifest.xml`)](https://github.com/KSNredawew/MAX--/new/main?filename=README.md#системные-взаимодействия-androidmanifestxml)
-5. [Закрепление в системе](https://github.com/KSNredawew/MAX--/new/main?filename=README.md#анализ-на-сниффинг-и-спуфинг)
-6. [Анализ на сниффинг и спуфинг](#анализ-на-сниффинг-и-спуфинг)
-7. [Расширенный анализ](https://github.com/KSNredawew/MAX--/new/main?filename=README.md#расширенный-анализ)
-8. [Выводы](https://github.com/KSNredawew/MAX--/new/main?filename=README.md#выводы)
+2. [Обфускация кода](https://github.com/KSNredawew/MAX--#обфускация-кода)
+3. [Сбор данных (модуль MyTracker)](https://github.com/KSNredawew/MAX--#сбор-данных)
+4. [Системные взаимодействия (`AndroidManifest.xml`)](https://github.com/KSNredawew/MAX--#системные-взаимодействия-androidmanifestxml)
+5. [Закрепление в системе](https://github.com/KSNredawew/MAX--#закрепление-в-системе)
+6. [Анализ на сниффинг и спуфинг](https://github.com/KSNredawew/MAX--#анализ-на-сниффинг-и-спуфинг)
+7. [Расширенный анализ](https://github.com/KSNredawew/MAX--#расширенный-анализ)
+8. [Выводы](https://github.com/KSNredawew/MAX--#выводы)
 
 ---
 
