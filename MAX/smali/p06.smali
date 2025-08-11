@@ -1,0 +1,103 @@
+.class public abstract Lp06;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Lo06;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    sget-object v0, Lo06;->a:Lo06;
+
+    sput-object v0, Lp06;->a:Lo06;
+
+    return-void
+.end method
+
+.method public static a(Landroidx/fragment/app/n;)Lo06;
+    .locals 1
+
+    :goto_0
+    if-eqz p0, :cond_1
+
+    invoke-virtual {p0}, Landroidx/fragment/app/n;->isAdded()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {p0}, Landroidx/fragment/app/n;->getParentFragmentManager()Landroidx/fragment/app/y;
+
+    :cond_0
+    invoke-virtual {p0}, Landroidx/fragment/app/n;->getParentFragment()Landroidx/fragment/app/n;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_1
+    sget-object p0, Lp06;->a:Lo06;
+
+    return-object p0
+.end method
+
+.method public static b(Landroidx/fragment/app/strictmode/Violation;)V
+    .locals 2
+
+    const-string v0, "FragmentManager"
+
+    const/4 v1, 0x3
+
+    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object p0, p0, Landroidx/fragment/app/strictmode/Violation;->a:Landroidx/fragment/app/n;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    :cond_0
+    return-void
+.end method
+
+.method public static final c(Landroidx/fragment/app/n;Ljava/lang/String;)V
+    .locals 3
+
+    new-instance v0, Landroidx/fragment/app/strictmode/FragmentReuseViolation;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "Attempting to reuse fragment "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v2, " with previous ID "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p0, p1}, Landroidx/fragment/app/strictmode/Violation;-><init>(Landroidx/fragment/app/n;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lp06;->b(Landroidx/fragment/app/strictmode/Violation;)V
+
+    invoke-static {p0}, Lp06;->a(Landroidx/fragment/app/n;)Lo06;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    return-void
+.end method

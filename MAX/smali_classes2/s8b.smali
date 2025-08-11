@@ -1,0 +1,52 @@
+.class public final synthetic Ls8b;
+.super Lfa;
+.source "SourceFile"
+
+# interfaces
+.implements Li56;
+
+
+# static fields
+.field public static final h:Ls8b;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 5
+
+    new-instance v0, Ls8b;
+
+    const-string v1, "<init>(Ljava/lang/Object;Ljava/lang/Object;)V"
+
+    const/4 v2, 0x4
+
+    const/4 v3, 0x3
+
+    const-class v4, Lfla;
+
+    invoke-direct {v0, v3, v4, v1, v2}, Lfa;-><init>(ILjava/lang/Class;Ljava/lang/String;I)V
+
+    sput-object v0, Ls8b;->h:Ls8b;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lj52;
+
+    check-cast p2, Lrj3;
+
+    check-cast p3, Lkotlin/coroutines/Continuation;
+
+    sget-object p0, Lf9b;->v:[Lza7;
+
+    new-instance p0, Lfla;
+
+    invoke-direct {p0, p1, p2}, Lfla;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    return-object p0
+.end method

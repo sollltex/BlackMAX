@@ -1,0 +1,176 @@
+.class public final Lzc2;
+.super Lym;
+.source "SourceFile"
+
+# interfaces
+.implements Lsfe;
+.implements Laqa;
+
+
+# instance fields
+.field public final d:J
+
+.field public final e:J
+
+
+# direct methods
+.method public constructor <init>(JJJ)V
+    .locals 0
+
+    invoke-direct {p0, p1, p2}, Lym;-><init>(J)V
+
+    iput-wide p3, p0, Lzc2;->d:J
+
+    iput-wide p5, p0, Lzc2;->e:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final c()I
+    .locals 3
+
+    invoke-virtual {p0}, Lym;->m()Lu82;
+
+    move-result-object v0
+
+    iget-wide v1, p0, Lzc2;->d:J
+
+    invoke-virtual {v0, v1, v2}, Lu82;->C(J)Lj52;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    const/4 p0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x3
+
+    :goto_0
+    return p0
+.end method
+
+.method public final d(Lpee;)V
+    .locals 5
+
+    invoke-virtual {p0}, Lym;->l()Lmv0;
+
+    move-result-object p1
+
+    new-instance v0, Lad2;
+
+    iget-wide v1, p0, Lym;->a:J
+
+    iget-wide v3, p0, Lzc2;->d:J
+
+    invoke-direct {v0, v1, v2, v3, v4}, Lad2;-><init>(JJ)V
+
+    invoke-virtual {p1, v0}, Lmv0;->c(Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+.method public final e(Lyde;)V
+    .locals 0
+
+    iget-object p1, p1, Lyde;->b:Ljava/lang/String;
+
+    invoke-static {p1}, Lcp3;->w(Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
+
+    invoke-virtual {p0}, Lzc2;->f()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final f()V
+    .locals 3
+
+    invoke-virtual {p0}, Lym;->t()Lmhe;
+
+    move-result-object v0
+
+    iget-wide v1, p0, Lym;->a:J
+
+    invoke-virtual {v0, v1, v2}, Lmhe;->d(J)V
+
+    return-void
+.end method
+
+.method public final g()[B
+    .locals 3
+
+    new-instance v0, Lru/ok/tamtam/nano/Tasks$ChannelLeave;
+
+    invoke-direct {v0}, Lru/ok/tamtam/nano/Tasks$ChannelLeave;-><init>()V
+
+    iget-wide v1, p0, Lym;->a:J
+
+    iput-wide v1, v0, Lru/ok/tamtam/nano/Tasks$ChannelLeave;->requestId:J
+
+    iget-wide v1, p0, Lzc2;->d:J
+
+    iput-wide v1, v0, Lru/ok/tamtam/nano/Tasks$ChannelLeave;->chatId:J
+
+    iget-wide v1, p0, Lzc2;->e:J
+
+    iput-wide v1, v0, Lru/ok/tamtam/nano/Tasks$ChannelLeave;->chatServerId:J
+
+    invoke-static {v0}, Liu8;->toByteArray(Liu8;)[B
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final getId()J
+    .locals 2
+
+    iget-wide v0, p0, Lym;->a:J
+
+    return-wide v0
+.end method
+
+.method public final getType()Lbqa;
+    .locals 0
+
+    sget-object p0, Lbqa;->p:Lbqa;
+
+    return-object p0
+.end method
+
+.method public final h()I
+    .locals 0
+
+    const p0, 0xf4240
+
+    return p0
+.end method
+
+.method public final i()Lmee;
+    .locals 4
+
+    new-instance v0, Lbv;
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x17
+
+    invoke-direct {v0, v1, v2}, Lbv;-><init>(Lnha;I)V
+
+    const-string v1, "chatId"
+
+    iget-wide v2, p0, Lzc2;->e:J
+
+    invoke-virtual {v0, v2, v3, v1}, Lmee;->n(JLjava/lang/String;)V
+
+    return-object v0
+.end method
